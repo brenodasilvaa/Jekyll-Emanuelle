@@ -1,0 +1,21 @@
+---
+layout: layout
+---
+<div id="colorlib-about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 col-md-push-1 animate-box">
+				<div class="about-desc">
+					<div class="desc">
+                        <p class="title">
+                            <span ><i class="icon-calendar5"></i> {{page.date | date: "%d/%m/%Y"}}</span>
+                            <span style="margin-left: 2rem;"><i class="icon-watch"></i> {{page.time-to-read}} </span>
+                        </p>
+                        <p class="text-center"><img style="max-height: 40rem; object-fit: cover;" src="{{page.cover}}" alt=""></p>
+						{{content}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
