@@ -1,4 +1,42 @@
 ---
 layout: layout
 ---
-{% include blog.html %}
+<div id="colorlib-blog">
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="bold">Blog</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                <span>Blog</span>
+                <h2>Leia nossos casos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rotate">
+                    <h2 class="heading">Blog</h2>
+                </div>
+            </div>
+        </div>
+        {% for post in site.posts %}
+            <div class="col-md-4">
+                <div class="article animate-box">
+                    <a href="{{ post.url }}" class="blog-img">
+                        <img class="img-responsive" src="{{post.thumbnail}}" alt="{{post.excerpt}}">
+                        <div class="overlay"></div>
+                        <div class="link">
+                        <span class="read">Leia mais</h2>
+                        </div>
+                    </a>
+                    <div class="desc">
+                        <span class="meta">{{ post.date | date: "%d/%m/%Y" }}</span>
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <p>{{post.excerpt}}</p>
+                    </div>
+                </div>
+                
+            </div>
+            {% endfor %}
+    </div>
+</div>

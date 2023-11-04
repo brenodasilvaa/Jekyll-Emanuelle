@@ -5,28 +5,11 @@
       <div class="row">
         <div class="col-md-12">
           <ul>
-            <li class="active"><a href="/index.html">Home</a></li>
-            <li><a href="/services.html">Procedimentos</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/about-detailed.html">Sobre</a></li>
+            <li {% if page.url == "/" %}class="active"{% endif %}><a href="/index.html">Home</a></li>
+            <li {% if page.url == "/services.html" %}class="active"{% endif %}><a href="/services.html">Procedimentos</a></li>
+            <li {% if page.url == "/blog.html" %}class="active"{% endif %}><a href="/blog.html">Blog</a></li>
+            <li {% if page.url == "/about-detailed.html" %}class="active"{% endif %}><a href="/about-detailed.html">Sobre</a></li>
           </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="head-title">Works</h2>
-          <a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
-            <span><i class="icon-search3"></i></span>
-          </a>
-          <a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
-            <span><i class="icon-search3"></i></span>
-          </a>
-          <a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
-            <span><i class="icon-search3"></i></span>
-          </a>
-          <a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
-            <span><i class="icon-search3"></i></span>
-          </a>
         </div>
       </div>
     </div>

@@ -1,10 +1,11 @@
 ---
 layout: posts
 time-to-read: 2 minutos de leitura
-cover: /assets/images/ecm-about-2.jpeg
+cover: [/assets/images/ecm-about-2.jpeg, /assets/images/ecm-about.jpeg]
+thumbnail: /assets/images/ecm-about-2.jpeg
+title: Indicações
 ---
 
-## Indicações
 Os casos em que colegas dentistas me encaminham pessoas da família são sempre especiais! Nunca vou conseguir expressar a gratidão pela confiança!
 
 Nesse caso a paciente é irmã de um colega, que permanecia com dor meses após ter realizado o tratamento endodôntico.

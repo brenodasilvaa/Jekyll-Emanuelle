@@ -6,14 +6,21 @@ layout: layout
 		<div class="row">
 			<div class="col-md-9 col-md-push-1 animate-box">
 				<div class="about-desc">
-					<div class="desc">
-                        <p class="title">
-                            <span ><i class="icon-calendar5"></i> {{page.date | date: "%d/%m/%Y"}}</span>
-                            <span style="margin-left: 2rem;"><i class="icon-watch"></i> {{page.time-to-read}} </span>
-                        </p>
-                        <p class="text-center"><img style="max-height: 40rem; object-fit: cover;" src="{{page.cover}}" alt=""></p>
-						{{content}}
+					<p class="title">
+						<h2>{{page.title}}</h2>
+						<span ><i class="icon-calendar5"></i> {{page.date | date: "%d/%m/%Y"}}</span>
+						<span style="margin-left: 2rem;"><i class="icon-watch"></i> {{page.time-to-read}} </span>
+					</p>
+					<div class="animate-box">
+						<p></p>
+						<div class="owl-carousel3">
+							{% for cover in page.cover %}
+							<img style="max-height: 40rem; width: auto;" src="{{cover}}" alt="">
+							{% endfor %}
+						</div>
+						<p></p>
 					</div>
+					{{content}}
 				</div>
 			</div>
 		</div>
